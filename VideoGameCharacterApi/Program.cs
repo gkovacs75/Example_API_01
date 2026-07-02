@@ -36,6 +36,7 @@ namespace VideoGameCharacterApi
                 // Then go to http://localhost:5054/scalar
             }
 
+            // Each 'Use' method adds a middleware to the request pipeline. The order of these methods is important.
             app.UseHttpsRedirection();
             app.UseAuthorization();
             app.MapControllers();
