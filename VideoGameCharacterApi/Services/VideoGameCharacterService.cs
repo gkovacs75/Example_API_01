@@ -47,7 +47,7 @@ namespace VideoGameCharacterApi.Services
         }
 
         public async Task<bool> UpdateCharacterAsync(int id, CharacterDto characterDto)
-        {            
+        {
             var entry = await context.Characters.Where(c => c.Id == id).FirstOrDefaultAsync();
 
             if (entry != null)

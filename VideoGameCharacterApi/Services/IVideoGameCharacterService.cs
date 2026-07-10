@@ -13,6 +13,6 @@ namespace VideoGameCharacterApi.Services
 
         Task<bool> UpdateCharacterAsync(int id, CharacterDto character);
 
-        //Task<bool> DeleteCharacterAsync(int id);
+        Task<bool> DeleteCharacterAsync(int id);
     }
 }
